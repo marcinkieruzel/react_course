@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "name": "Ajax"
+    },
+    {
+        "id": 1,
+        "name": "Feyenoord"
+    },
+    {
+        "id": 2,
+        "name": "Alkmaar"
+    },
+    {
+        "id": 3,
+        "name": "PSV"
+    },
+    {
+        "id": 4,
+        "name": "Twente"
+    },
+    {
+        "id": 5,
+        "name": "Heerenveen"
+    },
+    {
+        "id": 6,
+        "name": "Sparta Rotterdam"
+    },
+    {
+        "id": 7,
+        "name": "Nijmegen"
+    },
+    {
+        "id": 8,
+        "name": "Waalwijk"
+    },
+    {
+        "id": 9,
+        "name": "Excelsior"
+    },
+    {
+        "id": 10,
+        "name": "Utrecht"
+    },
+    {
+        "id": 11,
+        "name": "Groningen"
+    },
+    {
+        "id": 12,
+        "name": "Cambuur"
+    },
+    {
+        "id": 13,
+        "name": "Vitesse"
+    },
+    {
+        "id": 14,
+        "name": "FC Emmen"
+    },
+    {
+        "id": 15,
+        "name": "FC Volendam"
+    },
+    {
+        "id": 16,
+        "name": "G.A. Eagles"
+    },
+    {
+        "id": 17,
+        "name": "Sittard"
+    }
+]
