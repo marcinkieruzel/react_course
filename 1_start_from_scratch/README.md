@@ -1,10 +1,10 @@
 ### Lets start from scratch
 
-1. Create package.json file with `npm init`. Courious about that? Feel free to ask questions.
-2. Install main dapendencies: `npm install react react-dom`
-3. Then install webpack `npm install -save-dev webpack webpack-cli`
-4. We'll need some code transpilation. Lets use webpack `npm install --save-dev babel-loader` and some presets (they are like dictionaries) `npm install --save-dev @babel/core @babel/preset-react`
-5. We can configure babel presets `in webpack.config.js` file but common way to do that is to create a separate file `.babelrc` with the content:
+1. Utwórz plik package.json `npm init`.
+2. Zainstaluj zależności: `npm install react react-dom`
+3. Dodaj webpack `npm install -save-dev webpack webpack-cli`
+4. Następnie zajmijmy się transpilacją kodu. Użyjemy do tego webpack `npm install --save-dev babel-loader` z odpowiednimi presetami `npm install --save-dev @babel/core @babel/preset-react`
+5. Możemy skonfigurować je w pliku `webpack.config.js` wygodniej jednak użyć pliku `.babelrc`:
 
 ```json
 {
@@ -12,7 +12,7 @@
 }
 ```
 
-6. Now is the time for `webpack.config.js` file.
+6. Konfiguracja `webpack.config.js`.
 
 ```javascript
 const path = require("path");
@@ -38,7 +38,7 @@ module.exports = {
 };
 ```
 
-7. Lets create our HTML
+7. Dodajmy HTML
 
 ```html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ module.exports = {
 </html>
 ```
 
-8. And the final React
+8. Deklaracja React
 
 ```javascript
 import React from "react";
@@ -70,7 +70,7 @@ const App = () => {
 
 ReactDOM.render(<App />, document.querySelector("#root"));
 ```
-Depends of the version of react you use. You may rather use React 18 render function
+W zależności od wersji React użyjemy dwu różnych stylów deklaracji renderowania:
 ```javascript
 // Before
 import { render } from 'react-dom';
@@ -83,11 +83,11 @@ const container = document.getElementById('app');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(<App tab="home" />);
 ```
-Further reading: https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#updates-to-client-rendering-apis
+Więcej: https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html#updates-to-client-rendering-apis
 
-9. Add typescript `npm install --save-dev typescript ts-loader @types/node @types/react @types/react-dom @types/jest`
+9. Dodajemy typescript `npm install --save-dev typescript ts-loader @types/node @types/react @types/react-dom @types/jest`
 
-10. Add this to webpack:
+10. Deklaracja typescript w pliku webpack'a:
 
 ```javascript
  module: {
@@ -104,7 +104,7 @@ Further reading: https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
   },
 ```
 
-and compiler options in tsconfig.json
+opcje typescript tsconfig.json
 
 ```javascript
 {
