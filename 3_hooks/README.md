@@ -7,3 +7,4 @@
 5. Przyjrzyj się komponentowi w `pages/callback`. Zastanów się dlaczego callback odpala się co sekundę, spróbuj temu zapobiec. 
 6. Sprawdź kod w  `pages/usereducer`. Pozbądź się błędów w równaniu.
 7. W pliku `pages/forwardref` użyj referencji w rodzicu do zfocusowania inputa w komponencie dziecka.
+8. W pliku `usedeferredvalue.tsx` zoptymalizuj działanie skryptu przy użyciu hook'a useDeferredValue. Spróbuj użyć również hooka useTransition.
