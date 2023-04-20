@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 type Props = {
@@ -6,6 +6,8 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ children }): JSX.Element => {
+  const [expand, setExpand] = useState(false);
+
   return (
     <main>
       <header>
@@ -28,15 +30,43 @@ const Layout: React.FC<Props> = ({ children }): JSX.Element => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/property/83576">Default Property</Link>
+                  <Link className="nav-link" to="/property/83576">
+                    Default Property
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <button className="btn btn-warning">RESET CART</button>
+                </li>
+                <li className="nav-tem">
+                  <div className="dropdown">
+                    <a
+                      className="btn btn-secondary dropdown-toggle"
+                      onClick={() => setExpand((prev) => !prev)}
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Koszyk
+                    </a>
+
+                    <div
+                      className={`dropdown-menu ${expand && "show"}`}
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <a className="dropdown-item">ITEM</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
-          <p>CART: </p>
         </nav>
       </header>
       {children}

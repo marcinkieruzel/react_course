@@ -1,0 +1,229 @@
+{
+    "players": [
+        {
+            "name": "Bartłomiej Drągowski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/189/189-mini-1.jpg",
+            "klub": "Klub: Spezia Calcio",
+            "wagaWzrost": "74/191",
+            "meczeGole": "2/0",
+            "dataUrodzenia": "19.08.1997",
+            "slug": "bartlomiej-dragowski"
+        },
+        {
+            "name": "Łukasz Skorupski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/190/190-mini-1.jpg",
+            "klub": "Klub: Bologna FC",
+            "wagaWzrost": "84/187",
+            "meczeGole": "8/0",
+            "dataUrodzenia": "05.05.1991",
+            "slug": "lukasz-skorupski"
+        },
+        {
+            "name": "Wojciech Szczęsny",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/191/191-mini-1.jpg",
+            "klub": "Klub: Juventus FC",
+            "wagaWzrost": "85/196",
+            "meczeGole": "72/0",
+            "dataUrodzenia": "18.04.1990",
+            "slug": "wojciech-szczesny"
+        },
+        {
+            "name": "Jan Bednarek",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/192/192-mini-1.jpg",
+            "klub": "Klub: Southampton FC",
+            "wagaWzrost": "77/189",
+            "meczeGole": "48/1",
+            "dataUrodzenia": "12.04.1996",
+            "slug": "jan-bednarek"
+        },
+        {
+            "name": "Bartosz Bereszyński",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/193/193-mini-1.jpg",
+            "klub": "Klub: SSC Napoli",
+            "wagaWzrost": "77/183",
+            "meczeGole": "50/0",
+            "dataUrodzenia": "12.07.1992",
+            "slug": "bartosz-bereszynski"
+        },
+        {
+            "name": "Matty Cash",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/216/216-mini-1.jpg",
+            "klub": "Klub: Aston Villa",
+            "wagaWzrost": "79/185",
+            "meczeGole": "13/1",
+            "dataUrodzenia": "07.08.1997",
+            "slug": "matty-cash"
+        },
+        {
+            "name": "Paweł Dawidowicz",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/194/194-mini-1.jpg",
+            "klub": "Klub: Hellas Verona",
+            "wagaWzrost": "80/189",
+            "meczeGole": "8/0",
+            "dataUrodzenia": "20.05.1996",
+            "slug": "pawel-dawidowicz"
+        },
+        {
+            "name": "Robert Gumny",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/196/196-mini-1.jpg",
+            "klub": "Klub: FC Augsburg",
+            "wagaWzrost": "61/177",
+            "meczeGole": "6/0",
+            "dataUrodzenia": "04.06.1998",
+            "slug": "robert-gumny"
+        },
+        {
+            "name": "Michał Karbownik",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/250/250-mini-1.jpg",
+            "klub": "Klub: Fortuna Duesseldorf",
+            "wagaWzrost": "64/174",
+            "meczeGole": "4/0",
+            "dataUrodzenia": "13.03.2001",
+            "slug": "michal-karbownik"
+        },
+        {
+            "name": "Jakub Kiwior",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/198/198-mini-1.jpg",
+            "klub": "Klub: Arsenal FC",
+            "wagaWzrost": "80/187",
+            "meczeGole": "11/0",
+            "dataUrodzenia": "15.02.2000",
+            "slug": "jakub-kiwior"
+        },
+        {
+            "name": "Tymoteusz Puchacz",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/146/146-mini-1.jpg",
+            "klub": "Klub: Panathinaikos AO",
+            "wagaWzrost": "74/180",
+            "meczeGole": "12/0",
+            "dataUrodzenia": "23.01.1999",
+            "slug": "tymoteusz-puchacz"
+        },
+        {
+            "name": "Bartosz Salamon",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/252/252-mini-1.jpg",
+            "klub": "Klub: Lech Poznań",
+            "wagaWzrost": "84/194",
+            "meczeGole": "11/0",
+            "dataUrodzenia": "01.05.1991",
+            "slug": "bartosz-salamon"
+        },
+        {
+            "name": "Krystian Bielik",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/218/218-mini-1.jpg",
+            "klub": "Klub: Birmingham City",
+            "wagaWzrost": "88/189",
+            "meczeGole": "10/0",
+            "dataUrodzenia": "04.01.1998",
+            "slug": "krystian-bielik"
+        },
+        {
+            "name": "Przemysław Frankowski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/201/201-mini-1.jpg",
+            "klub": "Klub: RC Lens",
+            "wagaWzrost": "70/176",
+            "meczeGole": "32/1",
+            "dataUrodzenia": "12.04.1995",
+            "slug": "przemyslaw-frankowski"
+        },
+        {
+            "name": "Jakub Kamiński",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/203/203-mini-1.jpg",
+            "klub": "Klub: VfL Wolfsburg",
+            "wagaWzrost": "71/179",
+            "meczeGole": "9/1",
+            "dataUrodzenia": "05.06.2002",
+            "slug": "jakub-kaminski"
+        },
+        {
+            "name": "Ben Lederman",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/251/251-mini-1.jpg",
+            "klub": "Klub: Raków Częstochowa",
+            "wagaWzrost": "75/182",
+            "meczeGole": "0/0",
+            "dataUrodzenia": "08.05.2000",
+            "slug": "ben-lederman"
+        },
+        {
+            "name": "Karol Linetty",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/206/206-mini-1.jpg",
+            "klub": "Klub: Torino FC",
+            "wagaWzrost": "73/176",
+            "meczeGole": "43/5",
+            "dataUrodzenia": "02.02.1995",
+            "slug": "karol-linetty"
+        },
+        {
+            "name": "Michał Skóraś",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/188/188-mini-1.jpg",
+            "klub": "Klub: Lech Poznań",
+            "wagaWzrost": "64/172",
+            "meczeGole": "4/0",
+            "dataUrodzenia": "15.02.2000",
+            "slug": "michal-skoras"
+        },
+        {
+            "name": "Damian Szymański",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/219/219-mini-1.jpg",
+            "klub": "Klub: AEK FC",
+            "wagaWzrost": "70/181",
+            "meczeGole": "12/1",
+            "dataUrodzenia": "16.06.1995",
+            "slug": "damian-szymanski"
+        },
+        {
+            "name": "Sebastian Szymański",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/207/207-mini-1.jpg",
+            "klub": "Klub: Feyenoord Rotterdam",
+            "wagaWzrost": "58/174",
+            "meczeGole": "22/1",
+            "dataUrodzenia": "10.05.1999",
+            "slug": "sebastian-szymanski"
+        },
+        {
+            "name": "Nicola Zalewski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/208/208-mini-1.jpg",
+            "klub": "Klub: AS Roma",
+            "wagaWzrost": "78/175",
+            "meczeGole": "11/0",
+            "dataUrodzenia": "23.01.2002",
+            "slug": "nicola-zalewski"
+        },
+        {
+            "name": "Piotr Zieliński",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/209/209-mini-1.jpg",
+            "klub": "Klub: SSC Napoli",
+            "wagaWzrost": "75/180",
+            "meczeGole": "80/10",
+            "dataUrodzenia": "20.05.1994",
+            "slug": "piotr-zielinski"
+        },
+        {
+            "name": "Robert Lewandowski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/211/211-mini-1.jpg",
+            "klub": "Klub: FC Barcelona",
+            "wagaWzrost": "79/185",
+            "meczeGole": "140/78",
+            "dataUrodzenia": "21.08.1988",
+            "slug": "robert-lewandowski"
+        },
+        {
+            "name": "Krzysztof Piątek",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/213/213-mini-1.jpg",
+            "klub": "Klub: US Salernitana 1919",
+            "wagaWzrost": "77/183",
+            "meczeGole": "27/11",
+            "dataUrodzenia": "01.07.1995",
+            "slug": "krzysztof-piatek"
+        },
+        {
+            "name": "Karol Świderski",
+            "image": "https://pzpn.pl/public/system/images/reprezentacja_players/214/214-mini-1.jpg",
+            "klub": "Klub: Charlotte FC",
+            "wagaWzrost": "77/184",
+            "meczeGole": "21/9",
+            "dataUrodzenia": "23.01.1997",
+            "slug": "karol-swiderski"
+        }
+    ]
+}
