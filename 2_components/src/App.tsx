@@ -3,658 +3,471 @@ import "./App.css";
 
 function App() {
   return (
-    <div
-      className="mb-content"
-      style={{
-        width: "1200px",
-        margin: "0 auto",
-      }}
-    >
-      <h1>I amsterdam</h1>
-      <div className="mb-category-products">
-        <div className="category-products">
-          <ul className="products-grid products-grid--max-4-col">
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/i-amsterdam-silicone-bracelet-mint-green/"
-                title="I amsterdam Silicone bracelet, mint green"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2474"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/s/i/silicone_bracelet_in_mint_green_1_by_i_amsterdam_at_www.amstory.nl.jpg"
-                  alt="I amsterdam Silicone bracelet, mint green"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/i-amsterdam-silicone-bracelet-mint-green/"
-                      title="I amsterdam Silicone bracelet, mint green"
-                    >
-                      I amsterdam Silicone bracelet, mint green
-                    </a>
-                  </div>
-                </div>
+    <div className="layout" id="content">
+      <div className="wrapper">
+        <div className="content-page">
+          <section className="extension">
+            <div className="page">
+              <h3>BRAMKARZE</h3>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2474">
-                    <span className="price">€3.25</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/189/189-zoom.jpg"
+                  className="fancy"
+                  title="Bartłomiej  Drągowski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/189/189-mini-1.jpg"
+                    alt="Bartłomiej  Drągowski"
+                  />{" "}
+                </a>
+                <h6>Bartłomiej Drągowski</h6>
+                <p>Data urodzenia: 19.08.1997</p>
+                <p>Klub: Spezia Calcio</p>
+                <p>Waga/wzrost: 74/191</p>
+                <p>Mecze/gole: 2/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-blue/"
-                title="2D Rubber magnet, blue"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2502"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_royal_blue_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, blue"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-blue/"
-                      title="2D Rubber magnet, blue"
-                    >
-                      2D Rubber magnet, blue
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2502">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/190/190-zoom.jpg"
+                  className="fancy"
+                  title="Łukasz  Skorupski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/190/190-mini-1.jpg"
+                    alt="Łukasz  Skorupski"
+                  />{" "}
+                </a>
+                <h6>Łukasz Skorupski</h6>
+                <p>Data urodzenia: 05.05.1991</p>
+                <p>Klub: Bologna FC</p>
+                <p>Waga/wzrost: 84/187</p>
+                <p>Mecze/gole: 8/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-black/"
-                title="2D Rubber magnet, black"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2503"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_black_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, black"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-black/"
-                      title="2D Rubber magnet, black"
-                    >
-                      2D Rubber magnet, black
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2503">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/191/191-zoom.jpg"
+                  className="fancy"
+                  title="Wojciech  Szczęsny"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/191/191-mini-1.jpg"
+                    alt="Wojciech  Szczęsny"
+                  />{" "}
+                </a>
+                <h6>Wojciech Szczęsny</h6>
+                <p>Data urodzenia: 18.04.1990</p>
+                <p>Klub: Juventus FC</p>
+                <p>Waga/wzrost: 85/196</p>
+                <p>Mecze/gole: 73/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-orange/"
-                title="2D Rubber magnet, orange"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2504"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_orange_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, orange"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-orange/"
-                      title="2D Rubber magnet, orange"
-                    >
-                      2D Rubber magnet, orange
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2504">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-dark-green/"
-                title="2D Rubber magnet, dark green"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2505"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_dark_green_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, dark green"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-dark-green/"
-                      title="2D Rubber magnet, dark green"
-                    >
-                      2D Rubber magnet, dark green
-                    </a>
-                  </div>
-                </div>
+              <h3>OBROŃCY</h3>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2505">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/192/192-zoom.jpg"
+                  className="fancy"
+                  title="Jan  Bednarek"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/192/192-mini-1.jpg"
+                    alt="Jan  Bednarek"
+                  />{" "}
+                </a>
+                <h6>Jan Bednarek</h6>
+                <p>Data urodzenia: 12.04.1996</p>
+                <p>Klub: Southampton FC</p>
+                <p>Waga/wzrost: 77/189</p>
+                <p>Mecze/gole: 49/1</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-grey/"
-                title="2D Rubber magnet, grey"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2506"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_grey_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, grey"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-grey/"
-                      title="2D Rubber magnet, grey"
-                    >
-                      2D Rubber magnet, grey
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2506">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/193/193-zoom.jpg"
+                  className="fancy"
+                  title="Bartosz Bereszyński"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/193/193-mini-1.jpg"
+                    alt="Bartosz Bereszyński"
+                  />{" "}
+                </a>
+                <h6>Bartosz Bereszyński</h6>
+                <p>Data urodzenia: 12.07.1992</p>
+                <p>Klub: SSC Napoli</p>
+                <p>Waga/wzrost: 77/183</p>
+                <p>Mecze/gole: 51/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-light-grey/"
-                title="2D Rubber magnet, light grey"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2507"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_light_grey_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, light grey"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-light-grey/"
-                      title="2D Rubber magnet, light grey"
-                    >
-                      2D Rubber magnet, light grey
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2507">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/197/197-zoom.jpg"
+                  className="fancy"
+                  title="Tomasz  Kędziora"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/197/197-mini-1.jpg"
+                    alt="Tomasz  Kędziora"
+                  />{" "}
+                </a>
+                <h6>Tomasz Kędziora</h6>
+                <p>Data urodzenia: 11.06.1994</p>
+                <p>Klub: PAOK Saloniki</p>
+                <p>Waga/wzrost: 73/183</p>
+                <p>Mecze/gole: 27/1</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-mint-green/"
-                title="2D Rubber magnet, mint green"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2508"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_mint_green_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, mint green"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-mint-green/"
-                      title="2D Rubber magnet, mint green"
-                    >
-                      2D Rubber magnet, mint green
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2508">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/198/198-zoom.jpg"
+                  className="fancy"
+                  title="Jakub  Kiwior"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/198/198-mini-1.jpg"
+                    alt="Jakub  Kiwior"
+                  />{" "}
+                </a>
+                <h6>Jakub Kiwior</h6>
+                <p>Data urodzenia: 15.02.2000</p>
+                <p>Klub: Arsenal FC</p>
+                <p>Waga/wzrost: 80/187</p>
+                <p>Mecze/gole: 12/1</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-light-blue/"
-                title="2D Rubber magnet, light blue"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2509"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/D/2D_rubber_magnet_in_light_blue_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="2D Rubber magnet, light blue"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-light-blue/"
-                      title="2D Rubber magnet, light blue"
-                    >
-                      2D Rubber magnet, light blue
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2509">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/199/199-zoom.jpg"
+                  className="fancy"
+                  title="Arkadiusz Reca"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/199/199-mini-1.jpg"
+                    alt="Arkadiusz Reca"
+                  />{" "}
+                </a>
+                <h6>Arkadiusz Reca</h6>
+                <p>Data urodzenia: 17.06.1995</p>
+                <p>Klub: Spezia Calcio </p>
+                <p>Waga/wzrost: 81/187</p>
+                <p>Mecze/gole: 15/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/2d-rubber-magnet-dark-blue/"
-                title="2D Rubber magnet, dark blue"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2510"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/2/d/2d_rubber_magnet_in_dark_blue_by_i_amsterdam_at_www.amstory.nl_1.jpg"
-                  alt="2D Rubber magnet, dark blue"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/2d-rubber-magnet-dark-blue/"
-                      title="2D Rubber magnet, dark blue"
-                    >
-                      2D Rubber magnet, dark blue
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2510">
-                    <span className="price">€3.75</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/200/200-zoom.jpg"
+                  className="fancy"
+                  title="Mateusz Wieteska"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/200/200-mini-1.jpg"
+                    alt="Mateusz Wieteska"
+                  />{" "}
+                </a>
+                <h6>Mateusz Wieteska</h6>
+                <p>Data urodzenia: 11.02.1997</p>
+                <p>Klub: Clermont Foot 63</p>
+                <p>Waga/wzrost: 77/187</p>
+                <p>Mecze/gole: 2/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/i-amsterdam-beanie-hat-black/"
-                title="I amsterdam Beanie hat, black"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2511"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/B/e/Beanie_hat_in_black_by_I_amsterdam_at_amstory_4.jpg"
-                  alt="I amsterdam Beanie hat, black"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/i-amsterdam-beanie-hat-black/"
-                      title="I amsterdam Beanie hat, black"
-                    >
-                      I amsterdam Beanie hat, black
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2511">
-                    <span className="price">€14.99</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/253/253-zoom.jpg"
+                  className="fancy"
+                  title="Przemysław  Wiśniewski "
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/253/253-mini-1.jpg"
+                    alt="Przemysław  Wiśniewski "
+                  />{" "}
+                </a>
+                <h6>Przemysław Wiśniewski </h6>
+                <p>Data urodzenia: 27.07.1998</p>
+                <p>Klub: Spezia Calcio</p>
+                <p>Waga/wzrost: 88/195</p>
+                <p>Mecze/gole: 0/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/i-amsterdam-beanie-hat-dark-blue/"
-                title="I amsterdam Beanie hat, dark blue"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2512"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/B/e/Beanie_hat_in_blue_by_I_amsterdam_at_amstory_4.jpg"
-                  alt="I amsterdam Beanie hat, dark blue"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/i-amsterdam-beanie-hat-dark-blue/"
-                      title="I amsterdam Beanie hat, dark blue"
-                    >
-                      I amsterdam Beanie hat, dark blue
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2512">
-                    <span className="price">€14.99</span>{" "}
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/bicycle-bell-skyline-grey/"
-                title="Bicycle Bell Skyline, grey"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2514"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/b/i/bicycle_bell_skyline_grey_by_i_amsterdam_at_www.amstory.nl_1.jpg"
-                  alt="Bicycle Bell Skyline, grey"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/bicycle-bell-skyline-grey/"
-                      title="Bicycle Bell Skyline, grey"
-                    >
-                      Bicycle Bell Skyline, grey
-                    </a>
-                  </div>
-                </div>
+              <h3>POMOCNICY</h3>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2514">
-                    <span className="price">€5.99</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/218/218-zoom.jpg"
+                  className="fancy"
+                  title="Krystian  Bielik"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/218/218-mini-1.jpg"
+                    alt="Krystian  Bielik"
+                  />{" "}
+                </a>
+                <h6>Krystian Bielik</h6>
+                <p>Data urodzenia: 04.01.1998</p>
+                <p>Klub: Derby County </p>
+                <p>Waga/wzrost: 88/189</p>
+                <p>Mecze/gole: 11/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/bicycle-bell-skyline-light-blue/"
-                title="Bicycle Bell Skyline, light blue"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2515"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/b/i/bicycle_bell_skyline_light_blue_by_i_amsterdam_at_www.amstory.nl_1.jpg"
-                  alt="Bicycle Bell Skyline, light blue"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/bicycle-bell-skyline-light-blue/"
-                      title="Bicycle Bell Skyline, light blue"
-                    >
-                      Bicycle Bell Skyline, light blue
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2515">
-                    <span className="price">€5.99</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/201/201-zoom.jpg"
+                  className="fancy"
+                  title="Przemysław Frankowski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/201/201-mini-1.jpg"
+                    alt="Przemysław Frankowski"
+                  />{" "}
+                </a>
+                <h6>Przemysław Frankowski</h6>
+                <p>Data urodzenia: 12.04.1995</p>
+                <p>Klub: RC Lens</p>
+                <p>Waga/wzrost: 70/176</p>
+                <p>Mecze/gole: 33/1</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/bicycle-bell-skyline-mint-green/"
-                title="Bicycle Bell Skyline, mint green"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2516"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/B/i/Bicycle_bell_skyline_mint_green_by_I_Amsterdam_at_amstory_1.jpg"
-                  alt="Bicycle Bell Skyline, mint green"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/bicycle-bell-skyline-mint-green/"
-                      title="Bicycle Bell Skyline, mint green"
-                    >
-                      Bicycle Bell Skyline, mint green
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2516">
-                    <span className="price">€5.99</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/203/203-zoom.jpg"
+                  className="fancy"
+                  title="Jakub  Kamiński"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/203/203-mini-1.jpg"
+                    alt="Jakub  Kamiński"
+                  />{" "}
+                </a>
+                <h6>Jakub Kamiński</h6>
+                <p>Data urodzenia: 05.06.2002</p>
+                <p>Klub: VfL Wolfsburg </p>
+                <p>Waga/wzrost: 71/179</p>
+                <p>Mecze/gole: 10/1</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/ding-dong-bicycle-bell-80-mm-classNameic-red/"
-                title="Ding Dong bicycle bell, 80 mm, classNameic Red"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2517"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/d/i/ding_dong_bicycle_bell_80mm_in_classNameic_red_by_i_amsterdam_at_www.amstory.nl_1.jpg"
-                  alt="Ding Dong bicycle bell, 80 mm, classNameic Red"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/ding-dong-bicycle-bell-80-mm-classNameic-red/"
-                      title="Ding Dong bicycle bell, 80 mm, classNameic Red"
-                    >
-                      Ding Dong bicycle bell, 80 mm, classNameic Red
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2517">
-                    <span className="price">€11.50</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/251/251-zoom.jpg"
+                  className="fancy"
+                  title="Ben  Lederman"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/251/251-mini-1.jpg"
+                    alt="Ben  Lederman"
+                  />{" "}
+                </a>
+                <h6>Ben Lederman</h6>
+                <p>Data urodzenia: 08.05.2000</p>
+                <p>Klub: Raków Częstochowa</p>
+                <p>Waga/wzrost: 75/182</p>
+                <p>Mecze/gole: 0/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/ding-dong-bicycle-bell-80-mm-various-bikes/"
-                title="Ding Dong bicycle bell, 80 mm, Various Bikes"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2519"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/D/i/Ding_Dong_bicycle_bell_80mm_Various_bikes_at_amstory_1.jpg"
-                  alt="Ding Dong bicycle bell, 80 mm, Various Bikes"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/ding-dong-bicycle-bell-80-mm-various-bikes/"
-                      title="Ding Dong bicycle bell, 80 mm, Various Bikes"
-                    >
-                      Ding Dong bicycle bell, 80 mm, Various Bikes
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2519">
-                    <span className="price">€11.50</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/206/206-zoom.jpg"
+                  className="fancy"
+                  title="Karol  Linetty"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/206/206-mini-1.jpg"
+                    alt="Karol  Linetty"
+                  />{" "}
+                </a>
+                <h6>Karol Linetty</h6>
+                <p>Data urodzenia: 02.02.1995</p>
+                <p>Klub: Torino FC</p>
+                <p>Waga/wzrost: 73/176</p>
+                <p>Mecze/gole: 44/5</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/i-amsterdam-lanyard/"
-                title="I amsterdam lanyard"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2520"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/L/a/Lanyard_by_I_amsterdam_at_amstory_1.jpg"
-                  alt="I amsterdam lanyard"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/i-amsterdam-lanyard/"
-                      title="I amsterdam lanyard"
-                    >
-                      I amsterdam lanyard
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2520">
-                    <span className="price">€4.99</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/188/188-zoom.jpg"
+                  className="fancy"
+                  title="Michał Skóraś"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/188/188-mini-1.jpg"
+                    alt="Michał Skóraś"
+                  />{" "}
+                </a>
+                <h6>Michał Skóraś</h6>
+                <p>Data urodzenia: 15.02.2000</p>
+                <p>Klub: Lech Poznań</p>
+                <p>Waga/wzrost: 64/172</p>
+                <p>Mecze/gole: 5/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/baseball-cap-red/"
-                title="Baseball cap, red"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2523"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/B/a/Baseball_cap_in_red_at_amstory_1.jpg"
-                  alt="Baseball cap, red"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/baseball-cap-red/"
-                      title="Baseball cap, red"
-                    >
-                      Baseball cap, red
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2523">
-                    <span className="price">€12.50</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/254/254-zoom.jpg"
+                  className="fancy"
+                  title="Bartosz Slisz "
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/254/254-mini-1.jpg"
+                    alt="Bartosz Slisz "
+                  />{" "}
+                </a>
+                <h6>Bartosz Slisz </h6>
+                <p>Data urodzenia: 29.05.1999</p>
+                <p>Klub: Legia Warszawa</p>
+                <p>Waga/wzrost: 70/179</p>
+                <p>Mecze/gole: 2/0</p>
               </div>
-            </li>
-            <li className="item">
-              <a
-                href="https://www.amstory.nl/en/baseball-cap-grey/"
-                title="Baseball cap, grey"
-                className="product-image"
-              >
-                <div className="corner-top"></div>
-                <img
-                  id="product-collection-image-2526"
-                  src="https://www.amstory.nl/media/catalog/product/cache/6/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/B/a/Baseball_cap_in_ashgrey_at_amstory_1.jpg"
-                  alt="Baseball cap, grey"
-                />
-              </a>
-              <div className="product__info">
-                <div>
-                  <div className="product-name">
-                    <a
-                      href="https://www.amstory.nl/en/baseball-cap-grey/"
-                      title="Baseball cap, grey"
-                    >
-                      Baseball cap, grey
-                    </a>
-                  </div>
-                </div>
 
-                <div className="price-box">
-                  <span className="regular-price" id="product-price-2526">
-                    <span className="price">€12.50</span>{" "}
-                  </span>
-                </div>
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/219/219-zoom.jpg"
+                  className="fancy"
+                  title="Damian Szymański"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/219/219-mini-1.jpg"
+                    alt="Damian Szymański"
+                  />{" "}
+                </a>
+                <h6>Damian Szymański</h6>
+                <p>Data urodzenia: 16.06.1995</p>
+                <p>Klub: AEK FC</p>
+                <p>Waga/wzrost: 70/181</p>
+                <p>Mecze/gole: 13/2</p>
               </div>
-            </li>
-          </ul>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/207/207-zoom.jpg"
+                  className="fancy"
+                  title="Sebastian Szymański"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/207/207-mini-1.jpg"
+                    alt="Sebastian Szymański"
+                  />{" "}
+                </a>
+                <h6>Sebastian Szymański</h6>
+                <p>Data urodzenia: 10.05.1999</p>
+                <p>Klub: Feyenoord Rotterdam</p>
+                <p>Waga/wzrost: 58/174</p>
+                <p>Mecze/gole: 23/1</p>
+              </div>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/208/208-zoom.jpg"
+                  className="fancy"
+                  title="Nicola  Zalewski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/208/208-mini-1.jpg"
+                    alt="Nicola  Zalewski"
+                  />{" "}
+                </a>
+                <h6>Nicola Zalewski</h6>
+                <p>Data urodzenia: 23.01.2002</p>
+                <p>Klub: AS Roma </p>
+                <p>Waga/wzrost: 78/175</p>
+                <p>Mecze/gole: 11/0</p>
+              </div>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/209/209-zoom.jpg"
+                  className="fancy"
+                  title="Piotr  Zieliński"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/209/209-mini-1.jpg"
+                    alt="Piotr  Zieliński"
+                  />{" "}
+                </a>
+                <h6>Piotr Zieliński</h6>
+                <p>Data urodzenia: 20.05.1994</p>
+                <p>Klub: SSC Napoli</p>
+                <p>Waga/wzrost: 75/180</p>
+                <p>Mecze/gole: 81/10</p>
+              </div>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/186/186-zoom.jpg"
+                  className="fancy"
+                  title="Mateusz  Łęgowski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/186/186-mini-1.jpg"
+                    alt="Mateusz  Łęgowski"
+                  />{" "}
+                </a>
+                <h6>Mateusz Łęgowski</h6>
+                <p>Data urodzenia: 29.01.2003</p>
+                <p>Klub: Pogoń Szczecin</p>
+                <p>Waga/wzrost: 81/181</p>
+                <p>Mecze/gole: 1/0</p>
+              </div>
+
+              <h3>NAPASTNICY</h3>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/211/211-zoom.jpg"
+                  className="fancy"
+                  title="Robert  Lewandowski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/211/211-mini-1.jpg"
+                    alt="Robert  Lewandowski"
+                  />{" "}
+                </a>
+                <h6>Robert Lewandowski</h6>
+                <p>Data urodzenia: 21.08.1988</p>
+                <p>Klub: FC Barcelona</p>
+                <p>Waga/wzrost: 79/185</p>
+                <p>Mecze/gole: 141/78</p>
+              </div>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/212/212-zoom.jpg"
+                  className="fancy"
+                  title="Arkadiusz  Milik"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/212/212-mini-1.jpg"
+                    alt="Arkadiusz  Milik"
+                  />{" "}
+                </a>
+                <h6>Arkadiusz Milik</h6>
+                <p>Data urodzenia: 28.02.1994</p>
+                <p>Klub: Juventus FC</p>
+                <p>Waga/wzrost: 78/186</p>
+                <p>Mecze/gole: 68/16</p>
+              </div>
+
+              <div className="kadra-box">
+                <a
+                  href="https://pzpn.pl/public/system/images/reprezentacja_players/214/214-zoom.jpg"
+                  className="fancy"
+                  title="Karol Świderski"
+                >
+                  <img
+                    src="https://pzpn.pl/public/system/images/reprezentacja_players/214/214-mini-1.jpg"
+                    alt="Karol Świderski"
+                  />{" "}
+                </a>
+                <h6>Karol Świderski</h6>
+                <p>Data urodzenia: 23.01.1997</p>
+                <p>Klub: Charlotte FC</p>
+                <p>Waga/wzrost: 77/184</p>
+                <p>Mecze/gole: 21/9</p>
+              </div>
+              <div style={{clear: "both"}}></div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

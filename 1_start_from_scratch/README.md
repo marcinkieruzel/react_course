@@ -61,23 +61,7 @@ module.exports = {
 8. Deklaracja React
 
 ```javascript
-import React from "react";
-import ReactDOM from "react-dom";
 
-const App = () => {
-  return <h1>Hello world!!!</h1>;
-};
-
-ReactDOM.render(<App />, document.querySelector("#root"));
-```
-W zależności od wersji React użyjemy dwu różnych stylów deklaracji renderowania:
-```javascript
-// Before
-import { render } from 'react-dom';
-const container = document.getElementById('app');
-render(<App tab="home" />, container);
-
-// After
 import { createRoot } from 'react-dom/client';
 const container = document.getElementById('app');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
