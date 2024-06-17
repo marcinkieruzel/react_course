@@ -1,9 +1,8 @@
 # Bank simulation
 
-Zabawmy się w symulację banku. Klienci mogą brać pożyczki i wpłacać depozyty. Załóżmy, że procent od depozytów wynosi 2% co 5 sekund a procent od kredytów 5% co 5 sekund.
+Let's play a bank simulation game. Customers can take loans and make deposits. Let's assume that the interest rate on deposits is 2% every 5 seconds, and the interest rate on loans is 5% every 5 seconds.
 
-
-1. Utwórz slice dla banku i klienta. 
-2. Zakładamy, że klient ma jedną pożyczkę i może ją powiększać. Podobnie z depozytami. 
-3. Przelicz wszystko. Co 5 sekund musi się aktualizować stan konta klientów banku.
-4. Przelicz balans całego banku.
+1. Create a slice for the bank and the customer.
+2. Assume that the customer has one loan and can increase it. The same goes for deposits.
+3. Calculate everything. The account balance of bank customers must be updated every 5 seconds.
+4. Calculate the total balance of the entire bank.

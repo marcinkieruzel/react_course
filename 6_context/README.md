@@ -1,7 +1,6 @@
-# Eredivisie 
+# Eredivisie
 
-
-1. Naszym celem jest stworzenie tabeli ligowej. 
-2. Stwórz Context aby przechować dane z komponentu `Home`.
-3. Upewenij się, że dane są odpowiednio dodawane do kontekstu. Wyświetl poszczególne mecze poniżej tabeli. Zadbaj o walidację.
-4. W komponencie `Tables` wygeneruj tabelę ligi.
+1. Our goal is to create a league table.
+2. Create a Context to store data from the `Home` component.
+3. Make sure the data is properly added to the context. Display individual matches below the table. Take care of validation.
+4. In the `Tables` component, generate the league table.

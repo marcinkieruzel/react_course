@@ -1,11 +1,11 @@
 # Football manager
 
-Wyobraź sobie, że jesteś selekcjonerem reprezentacji Polski.
+Imagine that you are the manager of the Polish national team.
 
-1. Uruchom json-server przy pomocy komendy `json-server --watch ./db.json --port 3004`
-2. Na stronie głównej wczytaj listę piłkarzy reprezentacji Polski. Użyj React-Query.
-3. Stwórz routing dla aplikacji, przygotuj strony dla każdego piłkarza, stronę `selekcjoner` oraz stronę główną. 
-4. Na stronie `selekcjoner` stwórz formularz do dodawania nowych piłkarzy oraz listę obecnych z możliwością ich usuwania.
-5. Użyj mechanizmu prefetching żeby pobrać dane dla poszczególnych podstron.
-6. Dodaj opcję edycji treści na stronach poszczególnuych piłkarzy – możesz użyć artybutu contentEditable zamiast klasycznych inputów.
+1. Start json-server using the command `json-server --watch ./db.json --port 3004`
+2. Load the list of players for the Polish national team on the homepage. Use React-Query.
+3. Create routing for the application, prepare pages for each player, a "manager" page, and the homepage.
+4. On the "manager" page, create a form for adding new players and a list of current players with the ability to delete them.
+5. Use prefetching mechanism to fetch data for individual subpages.
+6. Add the option to edit content on the individual player pages - you can use the `contentEditable` attribute instead of traditional inputs.
 

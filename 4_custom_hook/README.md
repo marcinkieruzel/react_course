@@ -1,3 +1,3 @@
 # Custom hook
 
-1. W pliku `useWindowSize` stwórz własny komponent, który przetrzyma informację o aktualnym rozmiarze okna przeglądarki w stanie.
+1. In the `useWindowSize` file, create a custom hook that will store information about the current size of the browser window in its state.
