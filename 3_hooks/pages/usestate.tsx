@@ -7,9 +7,10 @@ const UseState: React.FC = (): JSX.Element => {
 
   return (
     <button
-      style={{ padding: "30px", fontSize: "26px" }}
+      style={{ padding: "30px", fontSize: "26px", backgroundColor: color}}
       onClick={() => {
-        console.log("I've cliked")
+        console.log("I've cliked");
+        setColor("blue");
       }}
     >
       Change color

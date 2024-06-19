@@ -2,10 +2,17 @@ import React, { forwardRef, useRef } from "react";
 
 const Parent: React.FC = (): JSX.Element => {
   const ref = useRef<HTMLInputElement>(null);
+  const ref2 = useRef<HTMLInputElement>(null);
   return (
     <div>
       <Child ref={ref} />
-      <button>
+      <button
+        onClick={() => {
+          if (ref.current) {
+            ref.current.focus();
+          }
+        }}
+      >
         Focus my child
       </button>
     </div>
@@ -15,6 +22,7 @@ const Parent: React.FC = (): JSX.Element => {
 const Child = forwardRef<HTMLInputElement>((_, ref) => {
   return (
     <div>
+      <input ref={ref} />
       <input ref={ref} />
     </div>
   );

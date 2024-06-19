@@ -20,6 +20,10 @@ const UseState: React.FC = (): JSX.Element => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [input, setInput] = useState("");
 
+  useEffect(() => {
+    setCorrectAnswer(null);
+  }, [currentQuestion])
+
 
   return (
     <div>

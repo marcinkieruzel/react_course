@@ -1,0 +1,23 @@
+{
+  "name": "1_start_from_scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "webpack": "^5.92.0",
+    "wepack-cli": "^0.0.1-security"
+  },
+  "dependencies": {
+    "babel-loader": "^9.1.3",
+    "react": "16.8",
+    "react-dom": "16.8"
+  }
+}

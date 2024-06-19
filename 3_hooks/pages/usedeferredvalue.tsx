@@ -5,12 +5,22 @@ type Props = {};
 
 const usedeferredvalue: React.FC<Props> = ({}): JSX.Element => {
   const [input, setInput] = useState<number | "">(0);
+  const deferredInput = useDeferredValue(input);
+  const [isPending, startTransition] = React.useTransition();
+  const [elements, setElements] = React.useState<number>(0);
 
   const generateElements = (number) => {
     return times(number, (num) => {
       return <li key={num}>{num}</li>;
     });
   };
+
+  React.useEffect(() => {
+    startTransition(() => {
+      console.log("startTransition");
+      setElements(input as number);
+    });
+  }, [input]);
 
   return (
     <section>
@@ -23,7 +33,8 @@ const usedeferredvalue: React.FC<Props> = ({}): JSX.Element => {
           )
         }
       ></input>
-      <ul>{generateElements(input)}</ul>
+      {isPending ? "Pending..." : null}
+      <ul>{generateElements(elements)}</ul>
     </section>
   );
 };

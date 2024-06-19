@@ -17,7 +17,9 @@ const usememo: React.FC = (): JSX.Element => {
   const [input, setInput] = useState("0");
   const [color, setColor] = useState("pink");
 
-  const factorial = factorialOf(Number(input));
+  const factorial =  React.useMemo(() => factorialOf(Number(input)), [input]);
+
+  const sth = ((x) => {for(let i = 0 ; i < x ; i++){}} )(20)
 
   return (
     <>

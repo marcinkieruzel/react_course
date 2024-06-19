@@ -1,21 +1,33 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 type Props = {
   callback: () => number;
 };
 
-const Child: React.FC<Props> = React.memo(({ callback }): JSX.Element => {
-  console.log("Looks like I've just rendered. Was that on purpose?");
+const Child: React.FC<Props> = React.memo(
+  ({ callback }): JSX.Element => {
+    console.log("Looks like I've just rendered. Was that on purpose?");
 
-  return <h1>Im'm a very big number of {callback()}</h1>;
-});
+    return <h1>Im'm a very big number of {callback()}</h1>;
+  },
+  (prev, next) => {
+    console.log(prev.callback, next.callback, prev.callback === next.callback);
+
+    return Object.is(prev.callback, next.callback);
+  }
+);
 
 const Parent: React.FC = (): JSX.Element => {
   const [timer, setTimer] = useState(new Date());
 
-  const callback = () => {
+  const callback = useCallback(() => {
     return Math.pow(200, 20);
-  };
+  }, []);
+
+
+  const callback2 = useMemo(() => {
+    return Math.pow(200, 20);
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => setTimer(new Date()), 1000);
@@ -24,10 +36,8 @@ const Parent: React.FC = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    console.log("Looks like callback has changed somehow")
-  }, [callback])
-
-  
+    console.log("Looks like callback has changed somehow");
+  }, [callback]);
 
   return (
     <div>
