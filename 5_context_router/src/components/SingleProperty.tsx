@@ -4,10 +4,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import { useParams } from "react-router-dom";
 
 type Props = {};
 
 const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
+  const params = useParams<{ id: string }>();
+
+  // const { data, error } = useSwr<Property[]>(
+  //   "http://localhost:3001/properties/" + params.id,
+  //   (url) => fetch(url).then((res) => res.json())
+  // );
 
   return (
     <section className="container">
@@ -66,9 +73,7 @@ const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
         </div>
 
         <div className="col-3">
-          <button  
-          
-          type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-primary">
             I'm interested in this property
           </button>
         </div>
