@@ -1,5 +1,5 @@
-# Context – optymalizacja
+# Context - optimization
 
-1. Przyjrzyj się zaproponowanym przykładom optymalizacji kontekstu
-2. Dodaj implementację zustand i jotai
+1. Examine the proposed examples of context optimization
+2. Add implementation of Zustand and Jotai
 
