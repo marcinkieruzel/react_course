@@ -5,16 +5,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import { useParams } from "react-router-dom";
+import { Property } from "../../interfaces/Property.interface";
+import useSwr from "swr";
 
 type Props = {};
 
 const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
   const params = useParams<{ id: string }>();
 
-  // const { data, error } = useSwr<Property[]>(
-  //   "http://localhost:3001/properties/" + params.id,
-  //   (url) => fetch(url).then((res) => res.json())
-  // );
+  const { data, error, mutate } = useSwr<Property>(
+    "http://localhost:3001/properties/" + params.id,
+    (url) => fetch(url).then((res) => res.json())
+  );
+
+  if (!data) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <section className="container">
@@ -25,50 +30,39 @@ const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <div
-            style={{
-              height: "400px",
-              backgroundSize: "cover",
-              backgroundPosition: "center center",
-              backgroundImage: `url(${"https://cvr.com.vn/app/uploads/2022/09/z3704931436576_211281f87c476a4322f3458b3f96453e.jpg"})`,
-            }}
-          ></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            style={{
-              height: "400px",
-              backgroundSize: "cover",
-              backgroundPosition: "center center",
-              backgroundImage: `url(${"https://cvr.com.vn/app/uploads/2022/09/z3704931436576_211281f87c476a4322f3458b3f96453e.jpg"})`,
-            }}
-          ></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            style={{
-              height: "400px",
-              backgroundSize: "cover",
-              backgroundPosition: "center center",
-              backgroundImage: `url(${"https://cvr.com.vn/app/uploads/2022/09/z3704931436576_211281f87c476a4322f3458b3f96453e.jpg"})`,
-            }}
-          ></div>
-        </SwiperSlide>
+        {data?.fields?.gallery?.map((image, index) => (
+          <SwiperSlide key={`${image}`}>
+            <div
+              style={{
+                height: "400px",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                backgroundImage: `url(${image})`,
+              }}
+            ></div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <hr />
       <div className="row">
         <div className="col-9">
-          <h1>Title</h1>
-          <h2>Price: 120 $</h2>
+          <h1>{data.title}</h1>
+          <h2>Price: {data.fields.price} $</h2>
 
-          <p className="lead">Excerpt</p>
+          <p
+            className="lead"
+            dangerouslySetInnerHTML={{ __html: data?.excerpt }}
+          ></p>
 
           <ul className="list-group">
-            <li className="list-group-item">Bedrooms: 3</li>
-            <li className="list-group-item">Baths: 2</li>
-            <li className="list-group-item">Space: 100 square meters</li>
+            <li className="list-group-item">
+              Bedrooms: {data?.fields?.bedrooms}
+            </li>
+            <li className="list-group-item">Baths: {data.fields?.baths}</li>
+            <li className="list-group-item">
+              Space: {data?.fields?.space} square meters
+            </li>
           </ul>
         </div>
 

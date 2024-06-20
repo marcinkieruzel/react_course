@@ -12,14 +12,24 @@ import SingleProperty from "./components/SingleProperty";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+enum RoutesEnum {
+  HOME = "/",
+  PROPERTY = "/property/:id"
+}
+
+
+
+
 root.render(
   // <React.StrictMode>
   <Cart>
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path={"/"} element={<App />} />
-          <Route path={"/property/:id"} element={<SingleProperty />} />
+          <Route path={RoutesEnum.HOME} element={<App />} />
+          <Route path={RoutesEnum.PROPERTY} element={<SingleProperty />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </Layout>
     </BrowserRouter>
