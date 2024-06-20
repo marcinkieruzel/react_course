@@ -11,6 +11,8 @@ export enum CartActionNames {
   ADD_PROPERTIES = "ADD_PROPERTIES",
   RESET_PROPERTIES = "RESET_PROPERTIES",
   RESET_CART = "RESET_CART",
+  CHANGE_CART = "CHANGE_CART",
+  SORT_PROPERTIES = "SORT_PROPERTIES",
 }
 
 export type CartAction =
@@ -32,4 +34,10 @@ export type CartAction =
     }
   | {
       type: CartActionNames.RESET_CART;
+    }
+  | {
+      type: CartActionNames.CHANGE_CART;
+    }
+  | {
+      type: CartActionNames.SORT_PROPERTIES;
     };

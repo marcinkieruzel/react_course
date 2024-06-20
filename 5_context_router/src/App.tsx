@@ -43,6 +43,13 @@ function App() {
 
   return (
     <section className="container">
+      <button
+        onClick={() => {
+          dispatch({ type: CartActionNames.SORT_PROPERTIES });
+        }}
+      >
+        Sort
+      </button>
       <div className="row">
         {!data && !error && <p>Loading...</p>}
         {error && <p>{error}</p>}

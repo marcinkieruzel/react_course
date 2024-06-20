@@ -1,4 +1,5 @@
 import { Reducer } from "react";
+import { produce } from "immer";
 
 import {
   CartAction,
@@ -10,33 +11,48 @@ import { uniqBy } from "lodash";
 const reducer: Reducer<CartState, CartAction> = (state, action) => {
   switch (action.type) {
     case CartActionNames.ADD_PROPERTIES: {
-      return {
-        ...state,
-        properties: action.payload,
-      };
+      return produce(state, (draft) => {
+        draft.properties = action.payload;
+      });
     }
     case CartActionNames.RESET_PROPERTIES: {
-      return {
-        ...state,
-        properties: [],
-      };
+      return produce(state, (draft) => {
+        draft.properties = [];
+      });
     }
     case CartActionNames.ADD_TO_CART: {
-      return {
-        ...state,
-        cart: uniqBy([...state.cart, action.payload], (x) => x.id),
-      };
+      return produce(state, (draft) => {
+        draft.cart = uniqBy([...draft.cart, action.payload], (x) => x.id);
+      });
     }
     case CartActionNames.REMOVE_FROM_CART: {
-      return {
-        ...state,
-        cart: state.cart.filter((x) => x.id !== action.payload.id),
-      };
+      return produce(state, (draft) => {
+        draft.cart = draft.cart.filter((x) => x.id !== action.payload.id);
+      });
     }
     case CartActionNames.RESET_CART: {
+      return produce(state, (draft) => {
+        draft.cart = [];
+      });
+    }
+    case CartActionNames.SORT_PROPERTIES: {
+      return produce(state, (draft) => {
+        draft.properties = draft.properties.sort(
+          (a, b) => a?.fields?.price - b?.fields?.price
+        );
+      });
+    }
+    case CartActionNames.CHANGE_CART: {
+      state.cart[0].title = "Changed title";
+
       return {
         ...state,
-        cart: [],
+        cart: state.cart.map((x, i) => {
+          if (i === 0) {
+            return { ...x, title: "Changed title" };
+          }
+          return x;
+        }),
       };
     }
   }

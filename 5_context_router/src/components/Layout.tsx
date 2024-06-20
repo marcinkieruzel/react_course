@@ -1,6 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useCartContext, useDispatchCart } from "../cart-context/Cart";
+import {
+  getCartMemo,
+  useCartContext,
+  useCartMemoData,
+  useDispatchCart,
+} from "../cart-context/Cart";
 import { CartActionNames } from "../cart-context/cart-context.interface";
 
 type Props = {
@@ -9,11 +14,15 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }): JSX.Element => {
   const [expand, setExpand] = useState(false);
+  const ref = useRef<number>(0);
 
-  const state = useCartContext();
+  const cart = useCartMemoData();
   const dispatch = useDispatchCart();
 
-  console.log("state", state, dispatch);
+  useEffect(() => {
+    ref.current++;
+    console.log("Layout rendered", ref.current);
+  });
 
   return (
     <main>
@@ -23,6 +32,15 @@ const Layout: React.FC<Props> = ({ children }): JSX.Element => {
             <a className="navbar-brand" href="#">
               Navbar
             </a>
+            <button
+              onClick={() => {
+                dispatch({
+                  type: CartActionNames.CHANGE_CART,
+                });
+              }}
+            >
+              Modify
+            </button>
             <button
               className="navbar-toggler"
               type="button"
@@ -76,7 +94,7 @@ const Layout: React.FC<Props> = ({ children }): JSX.Element => {
                     >
                       {/* <a className="dropdown-item">ITEM</a> */}
 
-                      {state?.cart.map((property) => {
+                      {cart.map((property) => {
                         return (
                           <div className="dropdown-item" key={property.id}>
                             {property.title}

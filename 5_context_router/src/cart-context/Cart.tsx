@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { Property } from "../../interfaces/Property.interface";
 import reducer from "./reducer";
-import { CartAction } from "./cart-context.interface";
+import { CartAction, CartState } from "./cart-context.interface";
+import { createSelector } from "reselect";
 
 type Props = {
   children: React.ReactNode;
@@ -9,7 +10,7 @@ type Props = {
 
 const initialState = {
   cart: [],
-  properties: []
+  properties: [],
 };
 
 const CartContext = React.createContext<{
@@ -17,7 +18,9 @@ const CartContext = React.createContext<{
   properties: Property[];
 }>(initialState);
 
-const CartDispatchContext = React.createContext<React.Dispatch<CartAction>>(() => {});
+const CartDispatchContext = React.createContext<React.Dispatch<CartAction>>(
+  () => {}
+);
 
 const Cart: React.FC<Props> = ({ children }): JSX.Element => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
@@ -53,4 +56,28 @@ export const useDispatchCart = () => {
   }
 
   return dispatch;
+};
+
+export const getProperties = (state: CartState) => state.properties;
+export const getCart = (state: CartState) =>
+  state.cart.sort((a: Property, b: Property) => a.id - b.id);
+
+export const getPropertiesMemo = createSelector(
+  [getProperties],
+  (properties) => {
+    return properties;
+  }
+);
+
+export const getCartMemo = createSelector([getCart], (cart) => {
+  console.log("Selector called");
+  return cart;
+});
+
+export const useCartMemoData = () => {
+  const cart = useCartContext();
+
+  console.log("Cart memo data", cart);
+
+  return getCartMemo(cart);
 };
