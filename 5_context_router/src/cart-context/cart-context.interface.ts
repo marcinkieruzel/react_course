@@ -10,6 +10,7 @@ export enum CartActionNames {
   REMOVE_FROM_CART = "REMOVE_FROM_CART",
   ADD_PROPERTIES = "ADD_PROPERTIES",
   RESET_PROPERTIES = "RESET_PROPERTIES",
+  RESET_CART = "RESET_CART",
 }
 
 export type CartAction =
@@ -28,4 +29,7 @@ export type CartAction =
   | {
       type: CartActionNames.RESET_PROPERTIES;
       something?: string;
+    }
+  | {
+      type: CartActionNames.RESET_CART;
     };

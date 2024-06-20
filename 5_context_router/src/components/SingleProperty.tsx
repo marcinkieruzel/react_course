@@ -7,11 +7,14 @@ import "swiper/css";
 import { useParams } from "react-router-dom";
 import { Property } from "../../interfaces/Property.interface";
 import useSwr from "swr";
+import { useDispatchCart } from "../cart-context/Cart";
+import { CartActionNames } from "../cart-context/cart-context.interface";
 
 type Props = {};
 
 const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
   const params = useParams<{ id: string }>();
+  const dispatch = useDispatchCart();
 
   const { data, error, mutate } = useSwr<Property>(
     "http://localhost:3001/properties/" + params.id,
@@ -67,7 +70,13 @@ const SingleProperty: React.FC<Props> = ({}): JSX.Element => {
         </div>
 
         <div className="col-3">
-          <button type="button" className="btn btn-primary">
+          <button
+            onClick={() => {
+              dispatch({ type: CartActionNames.ADD_TO_CART, payload: data });
+            }}
+            type="button"
+            className="btn btn-primary"
+          >
             I'm interested in this property
           </button>
         </div>
