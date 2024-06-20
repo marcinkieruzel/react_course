@@ -32,7 +32,7 @@ function App() {
         {!data && !error && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {(data || []).map((property: Property) => (
-          <div className="col-4">
+          <div className="col-4" key={property.id}>
             <div className="card">
               {typeof property.thumb === "string" && (
                 <img

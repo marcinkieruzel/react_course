@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { useCartContext, useDispatchCart } from "../Cart";
 
 type Props = {
   children: React.ReactNode;
@@ -7,6 +8,11 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }): JSX.Element => {
   const [expand, setExpand] = useState(false);
+
+  const state = useCartContext();
+  const dispatch = useDispatchCart();
+
+  console.log("state", state, dispatch);
 
   return (
     <main>
