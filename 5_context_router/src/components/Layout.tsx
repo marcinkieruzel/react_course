@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { useCartContext, useDispatchCart } from "../Cart";
+import { useCartContext, useDispatchCart } from "../cart-context/Cart";
 
 type Props = {
   children: React.ReactNode;

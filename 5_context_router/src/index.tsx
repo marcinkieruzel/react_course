@@ -5,7 +5,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import Cart from "./Cart";
+import Cart from "./cart-context/Cart";
 import App from "./App";
 import SingleProperty from "./components/SingleProperty";
 

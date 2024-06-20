@@ -1,31 +1,26 @@
 import React, { useEffect } from "react";
-import { Property } from "../interfaces/Property.interface";
+import { Property } from "../../interfaces/Property.interface";
+import reducer from "./reducer";
+import { CartAction } from "./cart-context.interface";
 
 type Props = {
   children: React.ReactNode;
 };
 
-export interface CartState {
-  cart: Property[];
-}
-
 const initialState = {
   cart: [],
+  properties: []
 };
 
 const CartContext = React.createContext<{
   cart: Property[];
+  properties: Property[];
 }>(initialState);
 
-const CartDispatchContext = React.createContext<React.Dispatch<any>>(() => {});
+const CartDispatchContext = React.createContext<React.Dispatch<CartAction>>(() => {});
 
 const Cart: React.FC<Props> = ({ children }): JSX.Element => {
-  const [state, dispatch] = React.useReducer(
-    (state: CartState, action: any) => {
-      return state;
-    },
-    initialState
-  );
+  const [state, dispatch] = React.useReducer(reducer, initialState);
 
   useEffect(() => {
     console.log("State changed", state);
